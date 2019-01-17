@@ -1,0 +1,57 @@
+h1 {
+    color: rgb(32, 3, 114);
+}
+
+.container {
+    width: 90%;
+    text-align: center;
+    background: rgb(157, 157, 245);
+    margin: auto;
+    border-radius: 2%;
+}
+.header{
+    background: rgb(223, 231, 236);
+}
+.dataInput{
+    background: rgb(236, 232, 232);
+    width: 0% 20% 20%;
+    text-align: center;
+    padding-bottom: 3px;  
+}
+
+li{
+    font-size: 1.1em;
+    list-style: none;
+    padding-right: 40px;
+    font-weight: 550;
+}
+
+button {
+    height: 40px;
+    width: 80px;
+    box-shadow: 2px 3px 2px 1px rgba(0, 0, 255, .2);
+    border-radius: 7%;
+    margin-bottom: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
