@@ -1,3 +1,5 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"; 
+
 h1 {
     color: rgb(32, 3, 114);
 }
@@ -24,6 +26,7 @@ li{
     list-style: none;
     padding-right: 40px;
     font-weight: 550;
+   
 }
 
 button {
@@ -33,6 +36,14 @@ button {
     border-radius: 7%;
     margin-bottom: 6px;
 }
+
+#del{
+   
+    cursor:pointer;
+    padding-right: 40px;
+    font-size: 0.7em;
+    margin-bottom: 6px;
+   }
 
 
 

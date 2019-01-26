@@ -9,17 +9,14 @@ ko.components.register('name-editor', {
     }
 });
 
-  function friend(name){
-    return {name : ko.observable(name)};
-  }
-
 ko.components.register("friend-list", {
   template:
-    "<p> Friends name: <input placeholder= 'Friends Name' data-bind='value: friend' /></p><h3>Add some friends to the list below...</h3><button data-bind='click: addfriend'>Add friend</button><ul data-bind='foreach: friends'><li data-bind='text: friend'></li></ul><div class='log'data-bind='text:'></div>",
+    "<p> Friends name: <input placeholder= 'Friends Name' data-bind='value: friend' /></p><h3>Add some friends to the list below...</h3><button data-bind='click: addfriend'>Add friend</button><ul data-bind='foreach: friends'><li data-bind='text:  friend'></li><span id='del' class='fa fa-minus-circle' data-bind='click: removeF, value:friend'>  Delete</span></ul><div class='log'data-bind='text:'></div>",
   viewModel: function() {
     this.friends = ko.observableArray((friends=[]));
-    addfriend = function(){this.friends.push((friend)); };
     friend='';
+    addfriend = () =>this.friends.push((friend)); 
+    removeF = (value) => this.friends.remove(value);
   }
 });
 
